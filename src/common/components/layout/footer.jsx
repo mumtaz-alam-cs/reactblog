@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import RecentPosts from "../Generic/recentposts";
 
 const Footer = () => {
   return (
@@ -34,49 +35,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="widget">
-              <h3 className="mb-4">Recent Post Entry</h3>
-              <div className="post-entry-footer">
-                <ul>
-                  <li>
-                    <Link to="/" className="d-flex align-items-center">
-                      <img
-                        src="https://placehold.co/90x90"
-                        className="me-4 rounded"
-                        alt="error"
-                      />
-                      <div className="text">
-                        <h4>
-                          Theres a Cool New Way for Men to Wear Socks and
-                          Sandals
-                        </h4>
-                        <div className="post-meta">
-                          <span className="mr-2">March 15, 2018</span>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" className="d-flex align-items-center">
-                      <img
-                        src="https://placehold.co/90x90"
-                        className="me-4 rounded"
-                        alt="error"
-                      />
-                      <div className="text">
-                        <h4>
-                          Theres a Cool New Way for Men to Wear Socks and
-                          Sandals
-                        </h4>
-                        <div className="post-meta">
-                          <span className="mr-2">March 15, 2018</span>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <RecentPosts />
           </div>
         </div>
         <div className="row mt-5">

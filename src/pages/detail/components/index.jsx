@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import PageBanner from "../../../common/components/Generic/pagebanner";
+import RecentPosts from "../../../common/components/Generic/recentposts";
 
 const postsData = [
   {
@@ -101,8 +102,8 @@ const Detail = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="author-bio text-center">
-              <div className="bio">
+            <div className="author-bio">
+              <div className="bio text-center">
                 <img
                   src={postData ? postData.authorImageLink : ""}
                   alt="error"
@@ -112,6 +113,9 @@ const Detail = () => {
                   Distinctio natus voluptates culpa sapiente dolor atque fugiat
                   beatae cumque libero placeat.
                 </div>
+              </div>
+              <div className="my-4">
+                <RecentPosts />
               </div>
             </div>
           </div>
